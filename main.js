@@ -7,3 +7,9 @@ const botonJugar = document.querySelector("jugar")
 botonJugar.onclick = function () {
 
 }
+
+function actualizarNumeroRonda(ronda){
+    ronda++
+    let numeroRonda = document.querySelector("numero-ronda").textContent
+    numeroRonda = ronda
+}
