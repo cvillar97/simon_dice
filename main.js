@@ -10,6 +10,12 @@ botonJugar.onclick = function () {
 
 }
 
+function bloquearInputUsuario() {
+    document.querySelectorAll(".colores").onclick = function(){
+        
+    }
+}
+
 function obtenerColorRandom(){
     let colores = document.querySelectorAll(".colores")
     return colores[obtenerNumeroRandom()]
