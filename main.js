@@ -8,6 +8,13 @@ botonJugar.onclick = function () {
 
 
 
+}
+
+function obtenerColorRandom(){
+    let colores = document.querySelectorAll(".colores")
+    return colores[obtenerNumeroRandom()]
+}
+
 function obtenerNumeroRandom(){
     let numeroRandom = Math.floor(Math.random() * 4)
     return numeroRandom
