@@ -8,6 +8,9 @@ botonJugar.onclick = function () {
 
 
 
+function obtenerNumeroRandom(){
+    let numeroRandom = Math.floor(Math.random() * 4)
+    return numeroRandom
 }
 
 function actualizarNumeroRonda(){
