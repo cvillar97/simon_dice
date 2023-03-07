@@ -36,3 +36,12 @@ function actualizarEstadoDeJuego(estado){
     let estadoDeJuego = document.querySelector("turno").textContent
     estadoDeJuego = estado
 }
+
+function reiniciarJuego() {
+    secuenciaMaquina = []
+    secuenciaUsuario = []
+    ronda = 0
+
+    document.querySelector("#numero-ronda").textContent = "-"
+    document.querySelector("#turno").textContent = "Turno -"
+}
