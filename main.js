@@ -39,13 +39,14 @@ function obtenerNumeroRandom(){
 
 function actualizarNumeroRonda(){
     ronda++
-    let numeroRonda = document.querySelector("numero-ronda").textContent
-    numeroRonda = ronda
+    let numeroRonda = document.querySelector("#numero-ronda")
+    numeroRonda.textContent = ronda
+    
 }
 
 function actualizarEstadoDeJuego(estado){
-    let estadoDeJuego = document.querySelector("turno").textContent
-    estadoDeJuego = estado
+    let estadoDeJuego = document.querySelector("#turno")
+    estadoDeJuego.textContent = estado
 }
 
 function reiniciarJuego() {
