@@ -18,6 +18,10 @@ function manejarRonda() {
     bloquearInputUsuario()
     let nuevoColor = obtenerColorRandom()
 
+    secuenciaMaquina.push(nuevoColor)
+
+    secuenciaMaquina.forEach(function(color, index){
+        resaltarColor(color)
     })
 }
 
