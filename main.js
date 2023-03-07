@@ -21,6 +21,13 @@ function manejarRonda() {
     })
 }
 
+function resaltarColor(color) {
+    color.style.opacity = 1
+    setTimeout(function(){
+        color.style.opacity = 0.5
+    }, 500)
+}
+
 function bloquearInputUsuario() {
     document.querySelectorAll(".colores").onclick = function(){
         
