@@ -16,11 +16,8 @@ function manejarRonda() {
     actualizarNumeroRonda()
     actualizarEstadoDeJuego("Turno máquina")
     bloquearInputUsuario()
-   
-    secuenciaMaquina.push(obtenerColorRandom)
+    let nuevoColor = obtenerColorRandom()
 
-    secuenciaMaquina.forEach(function(color){
-        
     })
 }
 
