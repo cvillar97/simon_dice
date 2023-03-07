@@ -6,7 +6,7 @@ const botonJugar = document.querySelector("#jugar")
 
 botonJugar.onclick = function () {
     reiniciarJuego()
-    
+    manejarRonda()
 
 
 }
