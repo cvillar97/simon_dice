@@ -9,7 +9,19 @@ botonJugar.onclick = function () {
     
 
 
+}
 
+function manejarRonda() {
+   
+    actualizarNumeroRonda()
+    actualizarEstadoDeJuego("Turno máquina")
+    bloquearInputUsuario()
+   
+    secuenciaMaquina.push(obtenerColorRandom)
+
+    secuenciaMaquina.forEach(function(color){
+        
+    })
 }
 
 function bloquearInputUsuario() {
