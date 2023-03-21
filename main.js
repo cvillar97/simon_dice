@@ -20,6 +20,14 @@ function manejarRonda() {
 
     secuenciaMaquina.push(nuevoColor)
 
+    let RETRASO_MS_MAQUINA = (secuenciaMaquina.length + 1) * 1000
+
+    secuenciaMaquina.forEach(function (color, index) {
+        let RETRASO_MS_COLOR = (index + 1) * 1000
+        setTimeout(function () {
+            resaltarColor(color)
+        }, RETRASO_MS_COLOR)
+
     })
 }
 
