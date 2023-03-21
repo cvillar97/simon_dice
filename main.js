@@ -22,6 +22,11 @@ function manejarRonda() {
 
     let RETRASO_MS_MAQUINA = (secuenciaMaquina.length + 1) * 1000
 
+    setTimeout(function () {
+        actualizarEstadoDeJuego("Turno jugador")
+        
+     }, RETRASO_MS_MAQUINA)
+
     secuenciaMaquina.forEach(function (color, index) {
         let RETRASO_MS_COLOR = (index + 1) * 1000
         setTimeout(function () {
