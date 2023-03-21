@@ -12,7 +12,7 @@ botonJugar.onclick = function () {
 }
 
 function manejarRonda() {
-   
+
     actualizarNumeroRonda()
     actualizarEstadoDeJuego("Turno máquina")
     bloquearInputUsuario()
@@ -20,42 +20,40 @@ function manejarRonda() {
 
     secuenciaMaquina.push(nuevoColor)
 
-    secuenciaMaquina.forEach(function(color, index){
-        resaltarColor(color)
     })
 }
 
 function resaltarColor(color) {
     color.style.opacity = 1
-    setTimeout(function(){
+    setTimeout(function () {
         color.style.opacity = 0.5
     }, 500)
 }
 
 function bloquearInputUsuario() {
-    document.querySelectorAll(".colores").onclick = function(){
-        
+    document.querySelectorAll(".colores").onclick = function () {
+
     }
 }
 
-function obtenerColorRandom(){
+function obtenerColorRandom() {
     let colores = document.querySelectorAll(".colores")
     return colores[obtenerNumeroRandom()]
 }
 
-function obtenerNumeroRandom(){
+function obtenerNumeroRandom() {
     let numeroRandom = Math.floor(Math.random() * 4)
     return numeroRandom
 }
 
-function actualizarNumeroRonda(){
+function actualizarNumeroRonda() {
     ronda++
     let numeroRonda = document.querySelector("#numero-ronda")
     numeroRonda.textContent = ronda
-    
+
 }
 
-function actualizarEstadoDeJuego(estado){
+function actualizarEstadoDeJuego(estado) {
     let estadoDeJuego = document.querySelector("#turno")
     estadoDeJuego.textContent = estado
 }
