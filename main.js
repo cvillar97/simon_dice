@@ -37,12 +37,12 @@ function manejarRonda() {
 }
 
 function desbloquearInputUsuario() {
-    document.querySelectorAll(".colores").forEach(function($color){
+    document.querySelectorAll(".colores").forEach(function ($color) {
         $color.onclick = manejarInputUsuario()
     })
 }
 
-function manejarInputUsuario (e) {
+function manejarInputUsuario(e) {
     let $color = e.target
     secuenciaUsuario.push($color)
 
