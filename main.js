@@ -41,6 +41,12 @@ function desbloquearInputUsuario() {
         $color.onclick = manejarInputUsuario()
     })
 }
+
+function manejarInputUsuario (e) {
+    let $color = e.target
+    
+}
+
 function resaltarColor(color) {
     color.style.opacity = 1
     setTimeout(function () {
