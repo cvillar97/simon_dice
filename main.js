@@ -44,7 +44,14 @@ function desbloquearInputUsuario() {
 
 function manejarInputUsuario (e) {
     let $color = e.target
-    
+    secuenciaUsuario.push($color)
+
+    let $colorMaquina = secuenciaMaquina[secuenciaUsuario.length - 1]
+
+    if ($color === $colorMaquina) {
+        desbloquearInputUsuario()
+    }
+
 }
 
 function resaltarColor(color) {
