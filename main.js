@@ -24,6 +24,7 @@ function manejarRonda() {
 
     setTimeout(function () {
         actualizarEstadoDeJuego("Turno jugador")
+        desbloquearInputUsuario()
 
     }, RETRASO_MS_MAQUINA)
 
