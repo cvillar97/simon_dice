@@ -58,6 +58,10 @@ function manejarInputUsuario(e) {
             manejarRonda()
             secuenciaUsuario = []
         }, 1000) 
+    } else if ($color !== $colorMaquina){
+        setTimeout(function(){
+            reiniciarJuego()
+        }, 1000) 
     }
 
 }
