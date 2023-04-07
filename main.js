@@ -48,7 +48,7 @@ function manejarInputUsuario(e) {
 
     let $colorMaquina = secuenciaMaquina[secuenciaUsuario.length - 1]
 
-    if ($color === $colorMaquina) {
+    if ($color === $colorMaquina && secuenciaUsuario.length !== secuenciaMaquina.length) {
         desbloquearInputUsuario()
     }
 
