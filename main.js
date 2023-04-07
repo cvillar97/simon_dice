@@ -53,6 +53,11 @@ function manejarInputUsuario(e) {
 
     if ($color === $colorMaquina && secuenciaUsuario.length !== secuenciaMaquina.length) {
         desbloquearInputUsuario()
+    } else if($color === $colorMaquina && secuenciaMaquina.length === secuenciaUsuario.length){
+        setTimeout(function(){
+            manejarRonda()
+            secuenciaUsuario = []
+        }, 1000) 
     }
 
 }
