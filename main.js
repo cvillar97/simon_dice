@@ -44,7 +44,9 @@ function desbloquearInputUsuario() {
 }
 
 function manejarInputUsuario(e) {
+
     let $color = e.target
+    resaltarColor($color)
     secuenciaUsuario.push($color)
 
     let $colorMaquina = secuenciaMaquina[secuenciaUsuario.length - 1]
