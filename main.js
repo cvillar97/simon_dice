@@ -39,7 +39,7 @@ function manejarRonda() {
 
 function desbloquearInputUsuario() {
     document.querySelectorAll(".colores").forEach(function ($color) {
-        $color.onclick = manejarInputUsuario()
+        $color.onclick = manejarInputUsuario
     })
 }
 
