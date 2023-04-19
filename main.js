@@ -74,8 +74,8 @@ function resaltarColor(color) {
 }
 
 function bloquearInputUsuario() {
-    document.querySelectorAll(".colores").forEach(function(color){
-        onclick = function () {
+    document.querySelectorAll(".colores").forEach(function($color){
+        $color.onclick = function () {
     }
     })
 }
