@@ -1,6 +1,7 @@
 let secuenciaMaquina = [];
 let secuenciaUsuario = [];
 let ronda = 0;
+const colores = document.querySelectorAll(".colores");
 
 const botonJugar = document.querySelector("#jugar");
 
