@@ -14,7 +14,7 @@ function manejarRonda() {
   actualizarNumeroRonda();
   actualizarEstadoDeJuego("Turno máquina");
   bloquearInputUsuario();
-  let nuevoColor = obtenerColorRandom();
+  const nuevoColor = obtenerColorRandom();
 
   secuenciaMaquina.push(nuevoColor);
 
