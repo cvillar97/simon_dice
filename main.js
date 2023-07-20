@@ -85,8 +85,8 @@ function obtenerColorRandom() {
 }
 
 function obtenerNumeroRandom() {
-    let numeroRandom = Math.floor(Math.random() * 4)
-    return numeroRandom
+  let numeroRandom = Math.floor(Math.random() * colores.length);
+  return numeroRandom;
 }
 
 function actualizarNumeroRonda() {
