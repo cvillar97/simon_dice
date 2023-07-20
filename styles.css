@@ -1,0 +1,38 @@
+body {
+    color: white;
+    font-size: 30px;
+    background-color: black;
+}
+
+.resaltar {
+    transition: transform 2s;
+    transform: scale(1.5);
+}
+
+.colores {
+    opacity: 0.5;
+    transition: opacity 500ms;
+}
+
+
+#colores {
+    position: relative;
+    
+}
+
+#contenedor {
+    margin-top: 100px;
+    margin-left: 550px;
+}
+
+#numero-ronda{
+    margin-left: 10px;
+}
+
+#turno{
+    margin-left: 300px;
+}
+
+#jugar{
+    margin-left: 300px;
+}
