@@ -26,10 +26,10 @@ function manejarRonda() {
   }, RETRASO_MS_MAQUINA);
 
   secuenciaMaquina.forEach(function (color, index) {
-    let RETRASO_MS_COLOR = (index + 1) * 1000;
+    let RETRASO_MS_RESALTADO_COLOR = (index + 1) * 1000;
     setTimeout(function () {
       resaltarColor(color);
-    }, RETRASO_MS_COLOR);
+    }, RETRASO_MS_RESALTADO_COLOR);
   });
 }
 
