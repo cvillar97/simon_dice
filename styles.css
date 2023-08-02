@@ -31,5 +31,9 @@ body {
 
 #columna-estado {
   display: grid;
+#colores {
+  height: 400px;
+  width: 400px;
+}
   justify-content: center;
 }
