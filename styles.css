@@ -26,6 +26,10 @@ body {
 
 .col-md-6 {
   display: grid;
+#columna-estado {
+  justify-content: center;
+}
+
 #contenedor-colores {
   height: 500px;
   width: 500px;
@@ -38,5 +42,13 @@ body {
   height: 400px;
   width: 400px;
 }
+
+#jugar {
+  font-size: large;
+}
+.row {
   justify-content: center;
+  text-align: center;
+}
+
 }
