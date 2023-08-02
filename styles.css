@@ -24,8 +24,6 @@ body {
   transition: opacity 500ms;
 }
 
-.col-md-6 {
-  display: grid;
 #columna-estado {
   justify-content: center;
 }
@@ -36,8 +34,6 @@ body {
   justify-content: center;
 }
 
-#columna-estado {
-  display: grid;
 #colores {
   height: 400px;
   width: 400px;
