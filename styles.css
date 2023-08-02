@@ -1,38 +1,52 @@
 body {
-    color: white;
-    font-size: 30px;
-    background-color: black;
+  color: white;
+  font-size: 30px;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .resaltar {
-    transition: transform 2s;
-    transform: scale(1.5);
+  transition: transform 2s;
+  transform: scale(1.5);
 }
 
 .colores {
-    opacity: 0.5;
-    transition: opacity 500ms;
+  opacity: 0.5;
+  transition: opacity 500ms;
 }
 
+#columna-estado {
+  justify-content: center;
+}
+
+#contenedor-colores {
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+}
 
 #colores {
-    position: relative;
-    
+  height: 400px;
+  width: 400px;
 }
 
-#contenedor {
-    margin-top: 100px;
-    margin-left: 550px;
+#jugar {
+  font-size: large;
+}
+.row {
+  justify-content: center;
+  text-align: center;
 }
 
-#numero-ronda{
-    margin-left: 10px;
-}
-
-#turno{
-    margin-left: 300px;
-}
-
-#jugar{
-    margin-left: 300px;
+#estado-de-juego {
+  margin-bottom: 50px;
 }

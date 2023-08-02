@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Simón Dice</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="styles.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
 
-<body>
-    <section id="estado-de-juego">
-        <label>Ronda #</label><label id="numero-ronda" >-</label>
-        <label id="turno">Turno -</label>
-        <button id="jugar">Jugar</button>
-    </section>
-    <section id="colores">
-        <div id="contenedor">
-            <img src="colores/amarillo.png" class="colores">
-            <img src="colores/azul.png" class="colores">
-            <br>
-            <img src="colores/verde.png" class="colores">
-            <img src="colores/rojo.png" class="colores">
+  <body>
+    <div class="container">
+      <div class="container" id="estado-de-juego">
+        <div class="row">
+          <div class="col md-4" id="columna-estado">
+            <label>Ronda #</label><label id="numero-ronda">-</label>
+          </div>
+          <div class="col md-4" id="columna-estado">
+            <label id="turno">Turno -</label>
+          </div>
+          <div class="col md-4" id="columna-estado">
+            <button type="button" class="btn btn-primary" id="jugar">
+              Jugar
+            </button>
+          </div>
         </div>
-    </section>
+      </div>
 
+      <div class="container" id="contenedor-colores">
+        <div class="container" id="colores">
+          <div class="row">
+            <img src="colores/amarillo.png" class="colores" />
+            <img src="colores/azul.png" class="colores" />
+          </div>
+          <div class="row">
+            <img src="colores/verde.png" class="colores" />
+            <img src="colores/rojo.png" class="colores" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
